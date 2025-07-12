@@ -1,0 +1,194 @@
+body {
+  background-image: url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.overlay {
+  background: rgba(58, 58, 158, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.form-container {
+  background-color: rgba(44, 44, 79, 0.7);
+  padding: 2rem;
+  border-radius: 0.625rem;
+  max-width: 37.5rem;
+  margin: 2rem auto;
+  width: 90%;
+  box-shadow: 0 0 0.9375rem rgba(0, 0, 0, 0.5);
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+#name, #email, #number {
+  width: 97%;
+  margin: 0.5rem 0 1.94rem 0;
+  border-radius: 0.3125rem;
+  padding: 0.4375rem;
+  border: solid transparent;
+}
+
+input::placeholder {
+  color: gray;
+  font-size: 0.9375rem;
+}
+
+#dropdown {
+  display: block;
+  width: 100%;
+  height: 2.1875rem;
+  margin: 0.5rem 0 1.94rem 0;
+  font-size: 0.9375rem;
+  color: black;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.3125rem;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+span {
+  font-size: 0.875rem;
+  margin-top: -6.25rem;
+  display: inline-block;
+}
+
+fieldset {
+  border: solid transparent;
+  margin: 1rem;
+  text-align: center;
+}
+
+hr {
+  height: 0.1875rem;
+  background-color: #7c64ac;
+  border: none;
+  margin: 1.25rem;
+  border-radius: 3.125rem;
+  box-shadow: 0 0 0.625rem #7c64ac, 0 0 1.25rem #7c64ac;
+}
+
+legend {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin: 0 0 0.9375rem 0;
+  padding: 0;
+}
+
+.inline {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  margin-left: 2.5rem;
+}
+
+.inline:first-of-type,
+.inline:nth-of-type(6),
+.inline:nth-of-type(11),
+.inline:nth-of-type(16),
+.inline:nth-of-type(21) {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  margin-left: 0;
+}
+
+.name-seo, .name-ads, .name-smm, .name-mail, .name-web, .name-ar {
+  margin: 0.625rem 0.5rem 0.625rem 0.3125rem;
+  display: block;
+}
+
+.section-label {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+  display: block;
+  margin: 1.875rem 0 0 0;
+}
+
+.section-hint {
+  display: block;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #ccc;
+  margin-top: 0.0625rem;
+}
+
+#extra {
+  margin: 0.625rem;
+  border-radius: 0.375rem;
+  padding: 0.3125rem;
+}
+
+.terms {
+  margin: 1.875rem 0 0 0;
+  text-align: center;
+}
+
+a {
+  color: #9fff80;
+}
+
+a:hover {
+  color: #f9dc5c;
+}
+
+a:active {
+  color: #ff3333;
+}
+
+.submit-container {
+  text-align: center;
+  margin: 0.9375rem;
+}
+
+.submit {
+  padding: 0.625rem 3.125rem;
+  border-radius: 0.625rem;
+  font-size: 0.9375rem;
+  color: #7c64ac;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.2);
+}
+
+.submit:active {
+  transform: translateY(0.125rem);
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
+}
+
+#title {
+  color: whitesmoke;
+}
+
+#description {
+  color: whitesmoke;
+}
+
+textarea {
+  width: 93%;
+  max-width: 100%;
+  box-sizing: border-box;
+  height: 4rem;
+}

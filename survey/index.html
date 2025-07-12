@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Customer satisfaction survey</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <header>
+    <h1 id="title">Customer satisfaction survey</h1>
+    <p id="description"><i>Thank you for taking the time to help us improve the service!</i></p>
+    </header>
+    <div class="form-container">
+<form method="post" id="survey-form" action='https://register-demo.freecodecamp.org' required>
+<label id="name-label" for="name">Name
+  <input id="name" name="name" type="text" placeholder="Enter your name" required />
+</label>
+<label id="email-label" for="email">Email
+  <input id="email" name="email" type="email" placeholder="Enter your Email" required />
+</label>
+<label id="number-label" for="number">Age
+  <input id="number" name="age" type="number" placeholder="Age" min="18" max="120" />
+</label>
+<label for="cooperation">How long have you been working with us?
+          <select id="dropdown" name="cooperation">
+            <option value="">(select one)</option>
+            <option value="1">Less than 6 months</option>
+            <option value="2">6 months to 1 year</option>
+            <option value="3">1 to 2 years</option>
+            <option value="4">More than 2 years</option>
+          </select>
+        </label>
+<div class="satisfaction-header">
+<label class="section-label">How satisfied are you with the aspects of our service?</label>
+<span class="section-hint">(1 = Very Dissatisfied, 5 = Very Satisfied)</span>
+</div>
+<fieldset>
+  <legend>Strategy & Planning</legend>
+  <label for="str1" class="inline">
+  <input id="str1" type="radio" name="str" class="inline" value="1" />1
+</label>
+<label for="str2" class="inline">
+  <input id="str2" type="radio" name="str" class="inline" value="2" />2
+</label>
+<label for="str3" class="inline">
+  <input id="str3" type="radio" name="str" class="inline" value="3" />3
+</label>
+<label for="str4" class="inline">
+  <input id="str4" type="radio" name="str" class="inline" value="4" />4
+</label>
+<label for="str5" class="inline">
+  <input id="str5" type="radio" name="str" class="inline" value="5" checked />5
+</label>
+<hr>
+  <legend>Communication & Responsiveness</legend>
+  <label for="Com1" class="inline">
+  <input id="Com1" type="radio" name="Com" class="inline" value="1" />1
+</label>
+<label for="Com2" class="inline">
+  <input id="Com2" type="radio" name="Com" class="inline" value="2" />2
+</label>
+<label for="Com3" class="inline">
+  <input id="Com3" type="radio" name="Com" class="inline" value="3" />3
+</label>
+<label for="Com4" class="inline">
+  <input id="Com4" type="radio" name="Com" class="inline" value="4" />4
+</label>
+<label for="Com5" class="inline">
+  <input id="Com5" type="radio" name="Com" class="inline" value="5" checked />5
+</label>
+
+<hr>
+<legend>Campaign Performance</legend>
+  <label for="perf1" class="inline">
+  <input id="perf1" type="radio" name="perf" class="inline" value="1" />1
+</label>
+<label for="perf2" class="inline">
+  <input id="perf2" type="radio" name="perf" class="inline" value="2" />2
+</label>
+<label for="perf3" class="inline">
+  <input id="perf3" type="radio" name="perf" class="inline" value="3" />3
+</label>
+<label for="perf4" class="inline">
+  <input id="perf4" type="radio" name="perf" class="inline" value="4" />4
+</label>
+<label for="perf5" class="inline">
+  <input id="perf5" type="radio" name="perf" class="inline" value="5" checked />5
+</label>
+
+<hr>
+<legend>Reporting & Insights</legend>
+  <label for="rep1" class="inline">
+  <input id="rep1" type="radio" name="rep" class="inline" value="1" />1
+</label>
+<label for="rep2" class="inline">
+  <input id="rep2" type="radio" name="rep" class="inline" value="2" />2
+</label>
+<label for="rep3" class="inline">
+  <input id="rep3" type="radio" name="rep" class="inline" value="3" />3
+</label>
+<label for="rep4" class="inline">
+  <input id="rep4" type="radio" name="rep" class="inline" value="4" />4
+</label>
+<label for="rep5" class="inline">
+  <input id="rep5" type="radio" name="rep" class="inline" value="5" checked />5
+</label>
+
+<hr>
+<legend>Creativity & Content</legend>
+  <label for="con1" class="inline">
+  <input id="con1" type="radio" name="con" class="inline" value="1" />1
+</label>
+<label for="con2" class="inline">
+  <input id="con2" type="radio" name="con" class="inline" value="2" />2
+</label>
+<label for="con3" class="inline">
+  <input id="con3" type="radio" name="con" class="inline" value="3" />3
+</label>
+<label for="con4" class="inline">
+  <input id="con4" type="radio" name="con" class="inline" value="4" />4
+</label>
+<label for="con5" class="inline">
+  <input id="con5" type="radio" name="con" class="inline" value="5" checked />5
+</label>
+
+</fieldset>
+<div class="satisfaction-header">
+<label class="section-label">
+  Which services do you currently use?</label>
+  <span class="section-hint">(check all that apply)</span>
+  </div>
+<div class="use">          
+<label for="seo" class="name-seo">
+  <input id="seo" type="checkbox" name="seo" value="seo"/>
+  Search Engine Optimization (SEO)
+</label>
+<label for="ads" class="name-ads">
+  <input id="ads" type="checkbox" name="ads" value="ads"/>
+  Paid Ads (Google, Meta)
+</label>
+<label for="smm" class="name-smm">
+  <input id="smm" type="checkbox" name="smm" value="smm"/>
+  Social Media Management
+</label>
+<label for="mail" class="name-mail">
+  <input id="mail" type="checkbox" name="mail" value="mail"/>
+  Email Marketing
+</label>
+<label for="web" class="name-web">
+  <input id="web" type="checkbox" name="web" value="web"/>
+  Web Design/UX
+</label>
+<label for="ar" class="name-ar">
+  <input id="ar" type="checkbox" name="ar" value="ar"/>
+  Analytics & Reporting
+</label>
+<div class="satisfaction-header">
+<label class="section-label">
+  Is there anything we can improve or support you better with?
+  <textarea id="extra" name="extra" placeholder="Vent here. We can take it."></textarea></label>
+    </div>
+      <label for="terms-and-conditions">
+<div class="terms"><input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="terms-and-conditions"/> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>.
+      </label></div>
+      <div class="submit-container">
+  <button type="submit" class="submit" id="submit"><b>Submit</b></button>
+</div>
+    </div>
+   </form>
+  </body>  
+</html>
